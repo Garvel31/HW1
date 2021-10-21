@@ -1,5 +1,9 @@
 package ru.pobeda;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +17,24 @@ public class Main {
         Trainee trainee = new Trainee(0, 4,true, "Alexey", "alex@gmail.com", 5000);
         trainee.autoGradeChange();
 
+//Создаем HashSet
+        Set<Employee> set = new HashSet<Employee>();
+        set.add(dev);
+        set.add(teamLead);
+        set.add(trainee);
+
+//Создаем ArrayList
+        ArrayList<Employee> myList = new ArrayList<>();
+
+//Заполняем ArrayList
+        for (Employee el: set) {
+            myList.add(el);
+        }
+
+//Проверяем заполнение  ArrayList
+        for (Employee el1 : myList){
+            System.out.println(el1.getEmpName());
+        }
     }
 
 
