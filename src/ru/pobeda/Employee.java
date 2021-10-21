@@ -5,6 +5,16 @@ public abstract class Employee {
     protected String empEmail;
     protected int empSalary;
 
+    public Employee(String empName, String empEmail, int empSalary) {
+        this.empName = empName;
+        this.empEmail = empEmail;
+        this.empSalary = empSalary;
+    }
+
+    public Employee() {
+
+    }
+
     public String getEmpName() {
         return empName;
     }
