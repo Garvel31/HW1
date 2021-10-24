@@ -41,7 +41,7 @@ public abstract class Employee {
 
     public abstract boolean isWorking();
 
-    public  abstract void changeEmail(String s);
+    public  abstract void changeEmail(String newEmail);
 
 
 }
